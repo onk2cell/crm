@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
+    <!-- plugins:css -->
+    <style>
+      /* Add your custom styles here */
+      .nav-item.active .collapse {
+        display: block;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/ionicons/dist/css/ionicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/css/vendor.bundle.base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/css/vendor.bundle.addons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/shared/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/demo_1/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Include Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Include jQuery -->
+    
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        {% include 'partials/nav.html' %}
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"> Add New Department</h4>
+                    <form class="form-sample">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Department Name</label>
+                              <div class="col-sm-9">
+                                  <input type="text" class="form-control"/>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Maneger</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                      </div>
+
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>

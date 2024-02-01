@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ADD Project BY Maneger </title>
+    <!-- plugins:css -->
+    <style>
+      /* Add your custom styles here */
+      .nav-item.active .collapse {
+        display: block;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/ionicons/dist/css/ionicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/css/vendor.bundle.base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/css/vendor.bundle.addons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/shared/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/demo_1/style.css') }}">
+    
+  </head>
+
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        {% include 'partials/nav.html' %}
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="row">
+                <div class="col-12 grid-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title"> Register New Project Name / Campain</h4>
+                      <form class="form-sample">
+                        <p class="card-description">Project Breif </p>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Project Description</label>
+                              <div class="col-sm-9">
+                                <textarea class="form-control" rows="4"></textarea>
+                              </div>
+                            </div>
+                          </div>    
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Manager</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Department</label>
+                              <div class="col-sm-9">
+                                <select class="form-control">
+                                  <option>Sales</option>
+                                  <option>IT</option>
+                                  <option>HR</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Date of Joining</label>
+                              <div class="col-sm-9">
+                                <input class="form-control" placeholder="dd/mm/yyyy" />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Add Files Here Section -->
+                          
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <div class="col-md-12">
+                                <div class="form-group row">
+                                  <label class="col-sm-3 col-form-label">Add Files Here</label>
+                                  <div class="col-sm-9">
+                                    <input type="file" class="form-control-file" />
+                                    <!-- You can use multiple attribute to allow selecting multiple files -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        
+                        <div class="row">   
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Team Leader</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-3 col-form-label">Deadline</label>
+                              <div class="col-sm-9">
+                                <input class="form-control" placeholder="dd/mm/yyyy" />
+                              </div>
+                            </div>
+                          </div>
+              
+                        </div>
+  
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../assets/js/shared/off-canvas.js"></script>
+    <script src="../../assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End custom js for this page-->
+  </body>

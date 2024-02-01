@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Form with Table</title>
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Form with Table</h2>
+
+  <form enctype="multipart/form-data">
+    <label for="projectName">Name Of The Project:</label>
+    <input type="text" id="projectName" name="projectName" required>
+
+    <br>
+
+    <label for="projectDescription">Project Description:</label>
+    <textarea id="projectDescription" name="projectDescription" required></textarea>
+
+    <br>
+
+    <label for="teamLeader">Team Leader:</label>
+    <input type="text" id="teamLeader" name="teamLeader" required>
+    
+    <br>
+
+    <label for="employees">Team Leaders:</label>
+    <select id="employees" name="employees" multiple>
+        <option value="employee1">Teamleader 1</option>
+        <option value="employee2">Teamleader 2</option>
+        <option value="employee3">Teamleader 3</option>
+        <!-- Add more employees as needed -->
+    </select>
+
+    <br>
+
+    <label for="projectFile">Project File:</label>
+    <input type="file" id="projectFile" name="projectFile">
+
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>Employees</h3>
+  <table id="employeesTable">
+    <tr>
+      <th>Employee Name</th>
+      <th>Projects Assigned</th>
+    </tr>
+    <tr>
+      <td>Teamleader 1</td>
+      <td>Project A, Project B</td>
+    </tr>
+    <tr>
+      <td>Teamleader 2</td>
+      <td>Project A</td>
+    </tr>
+    <tr>
+      <td>Teamleader 3</td>
+      <td>Project B</td>
+    </tr>
+    <!-- Add more rows for additional employees -->
+  </table>
+
+</body>
+</html>
